@@ -31,3 +31,5 @@ jobs:
           git add .
           git commit -m "Auto update playlist" || echo "No changes"
           git push --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
